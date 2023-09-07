@@ -4,12 +4,37 @@ import (
 	"fmt"
 )
 
+// Declaracion de constantes(Recomendable usar solo a nivel de paquete)
+const PI float32 = 3.14
+
+// Declaracion de multiples constantes
+const (
+	X = 100
+	Y = 0b1010 // binario
+	Z = 0o12   // octal
+	W = 0xff   // hexadecimal
+)
+
+// Valor iota = como vamos a tener valores correlativos(1 hasta 7)
+// iota va a iniciar desde cero y va a ir incrementando de uno en uno
+const (
+	LUNES = iota + 1
+	MARTES
+	MIERCOLES
+	JUEVES
+	VIERNES
+	SABADO
+	DOMINGO
+)
+
 var nameCourse = "golanddd"
 
 func main() {
 	//* VAR : Se puede declarar tanto fuera de un funcion como dentro
 	//* Para importar varias paquetes usamos el import mas parentesis, como abajo.
 	//Seccion3-Declaracion De Variables
+	fmt.Println("Numero pi ", PI)
+
 	fmt.Println("Nombre del curso: " + nameCourse)
 
 	var name, schol string
