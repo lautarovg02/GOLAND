@@ -29,9 +29,9 @@ func main() {
 	* float64 = para numeros grandes
 	 */
 
-	var float32 float32 = math.MaxFloat32
+	var f32 float32 = math.MaxFloat32
 	var float64 float64 = math.MaxFloat64
-	fmt.Println("Maximo valor float32 ", float32)
+	fmt.Println("Maximo valor float32 ", f32)
 	fmt.Println("Maximo valor float64 ", float64)
 
 	//Booleanos
@@ -62,4 +62,15 @@ func main() {
 
 	var r rune = '💘'
 	fmt.Println("Corazon valor unicode, ", r)
+
+	//Valores predertiminados o valor cero
+
+	var (
+		defaultInt     int
+		defaultBool    bool
+		defaultFloat32 float32
+		defaultUint    uint
+		defaultString  string
+	)
+	fmt.Println("Valores por defercto ", defaultInt, defaultUint, defaultFloat32, defaultString, defaultBool)
 }
