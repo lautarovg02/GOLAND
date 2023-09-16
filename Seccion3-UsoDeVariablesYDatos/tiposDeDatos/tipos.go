@@ -14,7 +14,6 @@ func main() {
 	//int8 es para almacenar numeros enteros pequenos
 	var maximoInt8 int8 = math.MaxInt8 // maximo
 	var minimoInt8 int8 = math.MinInt8 //minimo
-
 	// uint: solo almacena datos numericos postivos
 	var uintValoresPositivos uint = 10
 	fmt.Println("Maximo int8: ", maximoInt8, ", Minimo int8: ", minimoInt8)
